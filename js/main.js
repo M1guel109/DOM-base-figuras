@@ -19,9 +19,15 @@ function animacion(){
     figura.style.animation = "rotar 2s linear infinite";
 }
 
+function moverA() {
+    figura.style.transform = "translateY(-50px)";
+}
+
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
     document.getElementById('btnStar').addEventListener('click', estrella);
     document.getElementById('btnGif').addEventListener('click', gif);
     document.getElementById('btnAnim').addEventListener('click', animacion);
+    document.getElementById('btnMoveUp').addEventListener('click', moverA);
+
 })
