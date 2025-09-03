@@ -44,14 +44,14 @@ body {
 button {
   padding: 14px 20px;
   border: none;
-  background: #013889;
+  background: green;
   color: #fff;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
   min-width: 160px;
   margin: 16px;
-  border: 2px solid #013889;
+  border: 2px solid #0A1A1A;
 
 }
 
