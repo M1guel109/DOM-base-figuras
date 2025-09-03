@@ -36,15 +36,15 @@ function moverD() {
 }
 
 function cTitulo() {
-    const nuevoT = prompt('Ingrese un nuevo titulo');
-    let titulo = document.getElementById('mainTitle');
+    let nuevoT = prompt('Ingrese un nuevo titulo');
+    const titulo = document.getElementById('mainTitle');
 
     titulo.textContent = nuevoT;
 }
 
 function cParrafo() {
-    const nuevoP = prompt('Ingrese un nuevo parrafo'); 
-    let parrafo = document.getElementById('mainParagraph');
+    let nuevoP = prompt('Ingrese un nuevo parrafo'); 
+    const parrafo = document.getElementById('mainParagraph');
 
     parrafo.textContent = nuevoP;
 }
@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnAnim').addEventListener('click', animacion);
     document.getElementById('btnMoveUp').addEventListener('click', moverA);
     document.getElementById('btnMoveDown').addEventListener('click', moverB);
+    document.getElementById('btnMoveLeft').addEventListener('click', moverI);
     document.getElementById('btnMoveRight').addEventListener('click', moverD);
     document.getElementById('btnChangeTitle').addEventListener('click', cTitulo);
     document.getElementById('btnChangeParagraph').addEventListener('click', cParrafo);
