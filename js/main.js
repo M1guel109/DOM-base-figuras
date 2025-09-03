@@ -35,6 +35,12 @@ function moverD() {
     figura.style.transform = "translateX(-100px)";
 }
 
+function cTitulo() {
+    const titulo = document.getElementById('mainTitle');
+    const nuevoT = prompt('Ingrese un nuevo titulo');
+
+    titulo.textContent = nuevoT;
+}
 
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
@@ -44,4 +50,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnMoveUp').addEventListener('click', moverA);
     document.getElementById('btnMoveDown').addEventListener('click', moverB);
     document.getElementById('btnMoveRight').addEventListener('click', moverD);
+    document.getElementById('btnChangeTitle').addEventListener('click', cTitulo);
 }) 
