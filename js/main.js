@@ -20,7 +20,11 @@ function animacion(){
 }
 
 function moverA() {
-    figura.style.transform = "translateY(-50px)";
+    figura.style.transform = "translateY(-46px)";
+}
+
+function moverB() {
+    figura.style.transform = "translateY(40px)";
 }
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -29,5 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnGif').addEventListener('click', gif);
     document.getElementById('btnAnim').addEventListener('click', animacion);
     document.getElementById('btnMoveUp').addEventListener('click', moverA);
+    document.getElementById('btnMoveDown').addEventListener('click', moverB);
+
 
 })
