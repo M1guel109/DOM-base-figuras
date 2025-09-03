@@ -31,7 +31,7 @@ body {
 .left h2,
 .right h2 {
   padding: 20px;
-  color: #013889;
+  color: green;
   font-size: 30px;
 }
 
@@ -57,8 +57,8 @@ button {
 
 button:hover {
   background: #fff;
-  color: #013889;
-  border: 2px solid #013889;
+  color: black;
+  border: 2px solid #0A1A1A;
   border-radius: 0;
   transform: scale(1.1);
 }

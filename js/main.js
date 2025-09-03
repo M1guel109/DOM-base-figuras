@@ -42,6 +42,13 @@ function cTitulo() {
     titulo.textContent = nuevoT;
 }
 
+function cParrafo() {
+    const parrafo = document.getElementById('mainParagraph');
+    const nuevoP = prompt('Ingrese un nuevo parrafo'); 
+
+    parrafo.textContent = nuevoP;
+}
+
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
     document.getElementById('btnStar').addEventListener('click', estrella);
@@ -51,4 +58,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnMoveDown').addEventListener('click', moverB);
     document.getElementById('btnMoveRight').addEventListener('click', moverD);
     document.getElementById('btnChangeTitle').addEventListener('click', cTitulo);
+    document.getElementById('btnChangeParagraph').addEventListener('click', cParrafo);
 }) 
