@@ -8,6 +8,7 @@ function circulo() {
 
 function estrella(){
     figura.style.clipPath = " polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)";
+    figura.style.background = "red";
 }
 
 function gif() {
@@ -17,22 +18,27 @@ function gif() {
 
 function animacion(){
     figura.style.animation = "rotar 2s linear infinite";
+    figura.style.background = "purple";
 }
 
 function moverA() {
     figura.style.transform = "translateY(-46px)";
+    figura.style.background = "orange";
 }
 
 function moverB() {
     figura.style.transform = "translateY(40px)";
+    figura.style.background = "gray";
 }
 
 function moverI() {
     figura.style.transform = "translateX(100px)";
+    figura.style.background = "yellow";
 }
 
 function moverD() {
     figura.style.transform = "translateX(-100px)";
+    figura.style.background = "blue";
 }
 
 function cTitulo() {
