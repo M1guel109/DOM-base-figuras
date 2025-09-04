@@ -131,14 +131,17 @@ function cambiarAlt() {
     imagen.setAttribute('alt', nAlt);
 }
 
-
 const link = document.getElementById('mainLink');
-
 
 function cambiarHref() {
     let nHref = prompt('Ingrese una nueva URL');
 
     link.setAttribute('href', nHref);
+}
+
+function abrirPestaña() {
+    link.setAttribute('target', '_blank')
+    link.setAttribute('href', 'https://github.com/M1guel109');
 }
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -161,4 +164,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnToggleImage').addEventListener('click', mostrarOcultar);
     document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt);
     document.getElementById('btnChangeLink').addEventListener('click', cambiarHref);
+    document.getElementById('btnOpenLink').addEventListener('click', abrirPestaña);
 }) 
