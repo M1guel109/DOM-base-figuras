@@ -95,11 +95,12 @@ function eFigura() {
 }
 
 let imgActual = 0;
+const imagen = document.getElementById('mainImage');
+
 function imagenSig() {
     const imagenes = ['img/imagen.jpg','img/imagen2.jpg','img/imagen3.jpg'];
-    const imagenA = document.getElementById('mainImage');
 
-    imagenA.src = imagenes[imgActual];
+    imagen.src = imagenes[imgActual];
 
     imgActual++;
 
@@ -110,9 +111,8 @@ function imagenSig() {
 
 function imagenAnt() {
     const imagenes = ['img/imagen.jpg','img/imagen2.jpg','img/imagen3.jpg'];
-    const imagenA = document.getElementById('mainImage');
 
-    imagenA.src = imagenes[imgActual];
+    imagen.src = imagenes[imgActual];
 
     imgActual--;
 
@@ -122,9 +122,13 @@ function imagenAnt() {
 }
 
 function mostrarOcultar() {
-    const imagen = document.getElementById('mainImage');
-
     imagen.classList.toggle('oculto');
+}
+
+function cambiarAlt() {
+    let nAlt = prompt('Ingrese un nuevo texto alternativo para la imagen');
+
+    imagen.setAttribute('alt', nAlt);
 }
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -145,4 +149,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChangeImageNext').addEventListener('click', imagenSig);
     document.getElementById('btnChangeImagePrev').addEventListener('click', imagenAnt);
     document.getElementById('btnToggleImage').addEventListener('click', mostrarOcultar);
+    document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt);
 }) 
