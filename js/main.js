@@ -121,6 +121,12 @@ function imagenAnt() {
     }
 }
 
+function mostrarOcultar() {
+    const imagen = document.getElementById('mainImage');
+
+    imagen.classList.toggle('oculto');
+}
+
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
     document.getElementById('btnStar').addEventListener('click', estrella);
@@ -138,4 +144,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChooseFigure').addEventListener('click', eFigura);
     document.getElementById('btnChangeImageNext').addEventListener('click', imagenSig);
     document.getElementById('btnChangeImagePrev').addEventListener('click', imagenAnt);
+    document.getElementById('btnToggleImage').addEventListener('click', mostrarOcultar);
 }) 

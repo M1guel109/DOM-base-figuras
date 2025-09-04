@@ -101,6 +101,10 @@ img{
     display: block;
 }
 
+.oculto{
+  display: none;
+}
+
 @keyframes rotar {
   from {
     transform: rotate(0deg);
