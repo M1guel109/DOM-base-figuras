@@ -93,6 +93,21 @@ function eFigura() {
             break;
     }
 }
+
+let imgActual = 0;
+function cImagen() {
+    const imagenes = ['img/imagen.jpg','img/imagen2.jpg','img/imagen3.jpg'];
+    const imagenA = document.getElementById('mainImage');
+
+    imagenA.src = imagenes[imgActual];
+
+    imgActual++;
+
+    if (imgActual >= imagenes.length) {
+        imgActual = 0;
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
     document.getElementById('btnStar').addEventListener('click', estrella);
@@ -108,4 +123,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnRemoveParagraph').addEventListener('click', eParrafo);
     document.getElementById('btnHexColor').addEventListener('click', cColor);
     document.getElementById('btnChooseFigure').addEventListener('click', eFigura);
+    document.getElementById('btnChangeImageNext').addEventListener('click', cImagen);
 }) 
