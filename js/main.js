@@ -144,6 +144,10 @@ function abrirPestaña() {
     link.setAttribute('href', 'https://github.com/M1guel109');
 }
 
+function desLink() {
+    link.removeAttribute('href');
+}
+
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnCircle').addEventListener('click', circulo);
     document.getElementById('btnStar').addEventListener('click', estrella);
@@ -165,4 +169,5 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('btnChangeAlt').addEventListener('click', cambiarAlt);
     document.getElementById('btnChangeLink').addEventListener('click', cambiarHref);
     document.getElementById('btnOpenLink').addEventListener('click', abrirPestaña);
+    document.getElementById('btnDisableLink').addEventListener('click', desLink);
 }) 
